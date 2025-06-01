@@ -244,9 +244,13 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : {file_name}
 
-<b>⚙️ sɪᴢᴇ : {file_size}</b>""" 
+<b>⚙️ sɪᴢᴇ : {file_size}</b>
+ 
+ 
+🎬 ᴊᴏɪɴ ɢʀᴏᴜᴘ  : @moviecenter225
+🎬 ᴊᴏɪɴ SERIES : @mcserieshub""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
