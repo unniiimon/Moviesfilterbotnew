@@ -1804,11 +1804,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
             download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
             button = [[
-                InlineKeyboardButton("• ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ •", url='https://t.me/moviecenter225'),
-                InlineKeyboardButton('•ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ •', url='https://t.me/+agpA4_bznFAwZGVl')
-            ],[
-                InlineKeyboardButton("• ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ •", url='https://t.me/mcserieshub'))
-            ]]
+    InlineKeyboardButton("• ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ •", url='https://t.me/moviecenter225'),
+    InlineKeyboardButton('•ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ •', url='https://t.me/+agpA4_bznFAwZGVl')
+],[
+    InlineKeyboardButton("• ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ •", url='https://t.me/mcserieshub')  # ✅ removed extra closing parenthesis
+]]
+
             await query.message.edit_reply_markup(InlineKeyboardMarkup(button))
         except Exception as e:
             print(e)
