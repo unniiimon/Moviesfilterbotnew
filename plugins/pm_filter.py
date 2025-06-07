@@ -2667,42 +2667,30 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             ]
             for file in files
         ]
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("🔺𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-                InlineKeyboardButton('✨ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("📄ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
-            ],[ 
-                InlineKeyboardButton("🖇️ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url='https://t.me/+agpA4_bznFAwZGVl') 
-            ]
-        )
-        btn.insert(0, [
-                InlineKeyboardButton("🔺𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-                InlineKeyboardButton('✨ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("📄ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
-            ],[ 
-                InlineKeyboardButton("🖇️ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url='https://t.me/+agpA4_bznFAwZGVl') 
-            ]
-        )
-    else:
-        btn = []
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("🔺𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-                InlineKeyboardButton('✨ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("📄ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
-            ],[ 
-                InlineKeyboardButton("🖇️ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url='https://t.me/+agpA4_bznFAwZGVl') 
-            ]
-        )
-        btn.insert(0, [
+        # Add the two rows at the top
+    btn = [
+        [
             InlineKeyboardButton("🔺𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-                InlineKeyboardButton('✨ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("📄ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
-            ],[ 
-                InlineKeyboardButton("🖇️ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url='https://t.me/+agpA4_bznFAwZGVl') 
-            ]
-        )
+            InlineKeyboardButton('✨ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton("📄ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
+        ],
+        [
+            InlineKeyboardButton("🖇️ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url='https://t.me/+agpA4_bznFAwZGVl')
+        ]
+    ] + btn
+
+# If `files` is empty
+else:
+    btn = [
+        [
+            InlineKeyboardButton("🔺𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton('✨ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+            InlineKeyboardButton("📄ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}")
+        ],
+        [
+            InlineKeyboardButton("🖇️ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url='https://t.me/+agpA4_bznFAwZGVl')
+        ]
+    ]
     if offset != "":
         try:
             if settings['max_btn']:
