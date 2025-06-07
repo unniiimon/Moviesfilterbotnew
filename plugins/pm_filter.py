@@ -1816,7 +1816,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('💎 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
         else:
-            InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            buttons = [[
+                InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
                 InlineKeyboardButton('🍿 ᴄʜᴀɴɴᴇʟꜱ', url="https://t.me/moviecenter_junction"),
                 InlineKeyboardButton('✨ ᴍᴏᴠɪᴇ ɢʀᴏᴜ', url=GRP_LNK)
