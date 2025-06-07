@@ -49,29 +49,31 @@ async def start(client, message):
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('SERIES GROUP', url="https://t.me/mcserieshub"),
-                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('🍿 ᴄʜᴀɴɴᴇʟꜱ', url="https://t.me/moviecenter_junction"),
+                InlineKeyboardButton('✨ ᴍᴏᴠɪᴇ ɢʀᴏᴜ', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', url='https://t.me/moviecenter_junction')
+                InlineKeyboardButton('⭐ ꜱᴇʀɪᴇꜱ', url='https://t.me/mcserieshub')
             ],[
-                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('💎 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('SERIES GROUP', url="https://t.me/mcserieshub"),
-                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('🍿 ᴄʜᴀɴɴᴇʟꜱ', url="https://t.me/moviecenter_junction"),
+                InlineKeyboardButton('✨ ᴍᴏᴠɪᴇ ɢʀᴏᴜ', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('⭐ ꜱᴇʀɪᴇꜱ', url='https://t.me/mcserieshub')
+            ],[
+                InlineKeyboardButton('💎 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
@@ -135,29 +137,31 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('SERIES GROUP', url="https://t.me/mcserieshub"),
-                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('🍿 ᴄʜᴀɴɴᴇʟꜱ', url="https://t.me/moviecenter_junction"),
+                InlineKeyboardButton('✨ ᴍᴏᴠɪᴇ ɢʀᴏᴜ', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', url='https://t.me/moviecenter_junction')
+                InlineKeyboardButton('⭐ ꜱᴇʀɪᴇꜱ', url='https://t.me/mcserieshub')
             ],[
-                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('💎 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('SERIES GROUP', url="https://t.me/mcserieshub"),
-                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('🍿 ᴄʜᴀɴɴᴇʟꜱ', url="https://t.me/moviecenter_junction"),
+                InlineKeyboardButton('✨ ᴍᴏᴠɪᴇ ɢʀᴏᴜ', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('⭐ ꜱᴇʀɪᴇꜱ', url='https://t.me/mcserieshub')
+            ],[
+                InlineKeyboardButton('💎 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
@@ -190,30 +194,32 @@ async def start(client, message):
         else:
             if PREMIUM_AND_REFERAL_MODE == True:
                 buttons = [[
-                    InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('SERIES GROUP', url="https://t.me/mcserieshub"),
-                    InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', url='https://t.me/mcserieshub')
-                ],[
-                    InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                ]]
+                    InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('🍿 ᴄʜᴀɴɴᴇʟꜱ', url="https://t.me/moviecenter_junction"),
+                InlineKeyboardButton('✨ ᴍᴏᴠɪᴇ ɢʀᴏᴜ', url=GRP_LNK)
+            ],[
+                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('⭐ ꜱᴇʀɪᴇꜱ', url='https://t.me/mcserieshub')
+            ],[
+                InlineKeyboardButton('💎 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+            ]]
             else:
                 buttons = [[
-                    InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('SERIES GROUP', url="https://t.me/mcserieshub"),
-                    InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                ]]
+                    InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('🍿 ᴄʜᴀɴɴᴇʟꜱ', url="https://t.me/moviecenter_junction"),
+                InlineKeyboardButton('✨ ᴍᴏᴠɪᴇ ɢʀᴏᴜ', url=GRP_LNK)
+            ],[
+                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+                InlineKeyboardButton('⭐ ꜱᴇʀɪᴇꜱ', url='https://t.me/mcserieshub')
+            ],[
+                InlineKeyboardButton('💎 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+            ]]
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
             reply_markup = InlineKeyboardMarkup(buttons)
@@ -268,10 +274,10 @@ async def start(client, message):
 
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton("• ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ •", url='https://t.me/moviecenter225'),
-                        InlineKeyboardButton('• ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ •', url='https://t.me/+agpA4_bznFAwZGVl')
+                        InlineKeyboardButton("🍿 ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ ", url='https://t.me/moviecenter225'),
+                        InlineKeyboardButton('💎 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ •', url='https://t.me/+agpA4_bznFAwZGVl')
                     ],[
-                        InlineKeyboardButton("• ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ •", url='https://t.me/mcserieshub')
+                        InlineKeyboardButton("✨ ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ •", url='https://t.me/mcserieshub')
                     ]]
                     reply_markup = InlineKeyboardMarkup(button)
                 else:
@@ -340,10 +346,10 @@ async def start(client, message):
  
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton("• ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ •", url='https://t.me/moviecenter225'),
-                        InlineKeyboardButton('• ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ •', url='https://t.me/+agpA4_bznFAwZGVl')
+                        InlineKeyboardButton("🍿 ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ ", url='https://t.me/moviecenter225'),
+                        InlineKeyboardButton('💎 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/+agpA4_bznFAwZGVl')
                     ],[
-                        InlineKeyboardButton("• ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ •", url='https://t.me/mcserieshub')
+                        InlineKeyboardButton("✨ ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ ", url='https://t.me/mcserieshub')
                     ]]
                     reply_markup = InlineKeyboardMarkup(button)
                 else:
@@ -465,10 +471,10 @@ async def start(client, message):
                     return
             if STREAM_MODE == True:
                 button = [[
-                        InlineKeyboardButton("• ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ •", url='https://t.me/moviecenter225'),
-                        InlineKeyboardButton('• ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ •', url='https://t.me/+agpA4_bznFAwZGVl')
+                        InlineKeyboardButton("🍿 ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ ", url='https://t.me/moviecenter225'),
+                        InlineKeyboardButton('💎 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/+agpA4_bznFAwZGVl')
                     ],[
-                        InlineKeyboardButton("• ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ •", url='https://t.me/mcserieshub')
+                        InlineKeyboardButton("✨ ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ ", url='https://t.me/mcserieshub')
                     ]]
                 reply_markup=InlineKeyboardMarkup(button)
             else:
@@ -533,10 +539,10 @@ async def start(client, message):
                     return
             if STREAM_MODE == True:
                 button = [[
-                        InlineKeyboardButton("• ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ •", url='https://t.me/moviecenter225'),
-                        InlineKeyboardButton('• ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ •', url='https://t.me/+agpA4_bznFAwZGVl')
+                        InlineKeyboardButton("🍿 ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ ", url='https://t.me/moviecenter225'),
+                        InlineKeyboardButton('💎 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/+agpA4_bznFAwZGVl')
                     ],[
-                        InlineKeyboardButton("• ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ •", url='https://t.me/mcserieshub')
+                        InlineKeyboardButton("✨ ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ ", url='https://t.me/mcserieshub')
                     ]]
                 reply_markup=InlineKeyboardMarkup(button)
             else:
@@ -596,10 +602,10 @@ async def start(client, message):
             return
     if STREAM_MODE == True:
         button = [[
-                        InlineKeyboardButton("• ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ •", url='https://t.me/moviecenter225'),
-                        InlineKeyboardButton('• ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ •', url='https://t.me/+agpA4_bznFAwZGVl')
+                        InlineKeyboardButton("🍿 ᴶᴼᴵᴺ ᴼᵁᴿ ᴳᴿᴼᵁᴾ ", url='https://t.me/moviecenter225'),
+                        InlineKeyboardButton('💎 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/+agpA4_bznFAwZGVl')
                     ],[
-                        InlineKeyboardButton("• ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ •", url='https://t.me/mcserieshub')
+                        InlineKeyboardButton("✨ ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ ", url='https://t.me/mcserieshub')
                     ]]
         reply_markup=InlineKeyboardMarkup(button)
     else:
